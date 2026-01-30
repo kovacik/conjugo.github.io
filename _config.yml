@@ -1,3 +1,5 @@
 title: ConjuGo Landing Page
+domain: conjugo.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 baseurl: "" # leave empty for GitHub Pages root
-url: "http://localhost:4000"
+#url: "http://localhost:4000"
+url: "https://conjugo.github.io" # Update with repo URL
