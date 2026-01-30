@@ -4,47 +4,25 @@ title: Master French Conjugation
 description: Learn French verb conjugation with micro-lessons, smart notifications, and gamification.
 ---
 
-<!-- Hero Section -->
-<section>
-  <div class="i t u pa _">
-    <h1 class="ra va sm:jb">Master French Conjugation</h1>
-    <p class="qa xa q">
-      Learn French verb conjugation with micro-lessons, smart notifications, and game-like progress — in just one minute a day.
-    </p>
-    <div class="i z.5" id="download">
-      <a href="#0" class="j u na ma z da ya ja hover:db">
-        <span></span>
-        <span>App Store</span>
+<header class="ka la b c d ha cb lg:nb lg:mb lg:ob">
+  <nav class="i w u">
+    <div>
+      <a href="/" class="i u z.5">
+        <img src="{{ '/assets/img/logo-icon.svg' | relative_url }}" alt="ConjuGo logo" class="n l">
+        <span class="qa ua">ConjuGo</span>
       </a>
-      <a href="#0" class="j u na ma z da ya ja hover:db">
-        <span>▶</span>
-        <span>Google Play</span>
-      </a>
-    </div>
-  </div>
-  <div class="g sm:eb[396px] sm:e">
-    <img src="assets/img/iphone.png" alt="ConjuGo app preview" class="o m bb">
-  </div>
-</section>
-
-{% include features.html %}
-
-<!-- About Section -->
-<section>
-  <div class="k x sm:fb md:lb">
-    <div class="s md:kb">
-      <div class="_">
-        <h2 class="ra va sm:jb">About ConjuGo</h2>
-        <div class="sa xa ba">
-          <p>ConjuGo focuses exclusively on one of the hardest parts of learning French: verb conjugation.</p>
-          <p>Instead of long lessons and tables, you learn verbs in context, adaptively, and at your own pace.</p>
-          <p>The app continuously adjusts difficulty based on your mistakes, so you always train what matters most.</p>
-        </div>
-      </div>
     </div>
     <div>
-      <img src="assets/img/iphone.png" alt="ConjuGo app" class="o m bb">
+      <a href="#download" class="ka ma h da va ia xa hover:db hover:ya">Download</a>
     </div>
-  </div>
-</section>
+  </nav>
+</header>
 
+<main class="a e f ka p">
+  <!-- Hero Section -->
+  ...
+</main>
+
+<footer class="i t v u _ oa">
+  ...
+</footer>
