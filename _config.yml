@@ -1,4 +1,5 @@
-title: ConjuGo Landing Page
-domain: kovacik.github.io/conjugo.github.io/       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+title: "ConjuGo — Master French Verb Conjugation in 5 Minutes a Day"
+description: "iOS app for French verb conjugation. 6,000+ verbs, every tense, smart spaced-repetition drills. Free 7-day trial."
+domain: kovacik.github.io/conjugo.github.io/
 baseurl: "/conjugo.github.io"
 url: "https://kovacik.github.io"
