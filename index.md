@@ -27,47 +27,8 @@ description: "Stop guessing French verb endings. ConjuGo is an iOS app with 6,00
     </div>
 
     <div class="hero-visual">
-      <div class="phone">
-        <div class="phone-screen">
-          <div class="app-home">
-            <div class="app-hi">
-              <div>
-                <div class="greet">Bonjour, Alex 👋</div>
-                <small style="color: var(--text-dim); font-size: 0.78rem;">Let's keep the streak going</small>
-              </div>
-              <div class="ava"></div>
-            </div>
-
-            <div class="app-streak">
-              <div>
-                <div class="days">12</div>
-                <small>DAY STREAK</small>
-              </div>
-              <div class="week-dots">
-                <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i>
-              </div>
-            </div>
-
-            <div class="app-card">
-              <div class="row">
-                <h4>Ready for you</h4>
-                <span class="pill">8 due</span>
-              </div>
-              <p>5 reviews · 2 weak spots · 1 new verb</p>
-            </div>
-
-            <div class="app-card">
-              <div class="row" style="margin-bottom: 6px;">
-                <h4 style="font-size: 0.82rem;">Passé composé · recent</h4>
-              </div>
-              <div class="verb-row"><span><span class="fr">j'ai vu</span> <span class="en">— I saw</span></span><span class="check">✓</span></div>
-              <div class="verb-row"><span><span class="fr">tu es allé</span> <span class="en">— you went</span></span><span class="check">✓</span></div>
-              <div class="verb-row"><span><span class="fr">nous avons pris</span> <span class="en">— we took</span></span><span class="xmark">↻</span></div>
-            </div>
-
-            <div class="app-cta">Start today's drill →</div>
-          </div>
-        </div>
+      <div class="phone-shot">
+        <img src="{{ '/assets/img/screen-home.png' | relative_url }}" alt="ConjuGo home screen showing weekly progress, streak, and daily practice">
       </div>
     </div>
   </div>
@@ -153,16 +114,8 @@ description: "Stop guessing French verb endings. ConjuGo is an iOS app with 6,00
       <p style="color: var(--text-dim); font-size: 0.95rem;">Tenses covered: Présent · Passé Composé · Imparfait · Futur Simple · Conditionnel · Subjonctif · Plus-que-parfait · Futur Antérieur · Impératif.</p>
     </div>
     <div class="visual">
-      <div class="card-preview">
-        <div class="bubble-q">Conjuguez : <strong>prendre</strong> · imparfait</div>
-        <div class="conj-table">
-          <span class="pronoun">je</span><span class="form">prenais</span>
-          <span class="pronoun">tu</span><span class="form">prenais</span>
-          <span class="pronoun">il / elle</span><span class="form highlight">prenait</span>
-          <span class="pronoun">nous</span><span class="form">prenions</span>
-          <span class="pronoun">vous</span><span class="form">preniez</span>
-          <span class="pronoun">ils / elles</span><span class="form">prenaient</span>
-        </div>
+      <div class="phone-shot" style="width: 260px;">
+        <img src="{{ '/assets/img/screen-drill.png' | relative_url }}" alt="ConjuGo drill screen asking you to conjugate 'trouver' in the présent tense">
       </div>
     </div>
   </div>
