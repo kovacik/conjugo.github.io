@@ -70,8 +70,8 @@ description: "Stop guessing French verb endings. ConjuGo is an iOS app with 6,00
       </div>
       <div class="feature">
         <div class="feature-icon">📈</div>
-        <h3>Progress you can feel</h3>
-        <p>Streaks, accuracy trends, and a weekly view that shows exactly where you're improving — and what to work on next.</p>
+        <h3>Progress you can actually see</h3>
+        <p>Track your accuracy tense by tense, verb by verb. Streaks, weekly trends, and a clear picture of what you've mastered — and what's still slipping.</p>
       </div>
     </div>
   </div>

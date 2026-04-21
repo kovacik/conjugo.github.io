@@ -5,10 +5,10 @@
       <span>&copy; {{ 'now' | date: "%Y" }} ConjuGo. Made for French learners.</span>
     </div>
     <nav>
-      <a href="#features">Features</a>
-      <a href="#faq">FAQ</a>
-      <a href="mailto:hello@conjugo.app">Support</a>
-      <a href="#">Privacy</a>
+      <a href="{{ '/' | relative_url }}#features">Features</a>
+      <a href="{{ '/' | relative_url }}#faq">FAQ</a>
+      <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+      <a href="{{ '/terms/' | relative_url }}">Terms</a>
     </nav>
   </div>
 </footer>
