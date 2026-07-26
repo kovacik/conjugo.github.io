@@ -10,7 +10,7 @@ permalink: /terms/
 
 <h1>Terms of Service</h1>
 
-<p><em>Last updated: 21 April 2026</em></p>
+<p><em>Last updated: 26 July 2026</em></p>
 
 <p>These Terms of Service (the "Terms") govern your access to and use of the <strong>ConjuGo</strong> iOS application (the "App") and the website at <a href="https://conjugo.me">conjugo.me</a> (together, the "Service"), operated by <strong>Alojz Kovacik</strong>, based in Switzerland ("ConjuGo", "we", "us", or "our").</p>
 
@@ -28,6 +28,8 @@ permalink: /terms/
 
 <h3>3.1 Free trial</h3>
 <p>New users may be offered a free trial period. If you do not cancel before the trial ends, your subscription begins automatically and you will be charged the applicable fee.</p>
+
+<p><strong>One trial per person.</strong> The free trial is limited to one per person. Deleting your account and creating a new one does not make a further trial available: we keep a pseudonymous record of the fact that a trial was used, as described in section 6.2 of our <a href="/privacy/">Privacy Policy</a>. We may withdraw or refuse a trial where we reasonably believe it is being claimed repeatedly by the same person.</p>
 
 <h3>3.2 Auto-renewing subscriptions</h3>
 <p>ConjuGo offers auto-renewing subscriptions (monthly and yearly). By starting a subscription, you acknowledge and agree that:</p>

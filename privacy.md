@@ -10,7 +10,7 @@ permalink: /privacy/
 
 <h1>Privacy Policy</h1>
 
-<p><em>Last updated: 21 April 2026</em></p>
+<p><em>Last updated: 26 July 2026</em></p>
 
 <p>This Privacy Policy describes how <strong>ConjuGo</strong> ("ConjuGo", "we", "us", or "our") collects, uses, and shares information when you use our iOS mobile application (the "App") and our website at <a href="https://conjugo.me">conjugo.me</a> (together, the "Service").</p>
 
@@ -20,7 +20,7 @@ permalink: /privacy/
 
 <h3>1.1 Information you provide</h3>
 <ul>
-  <li><strong>Account information</strong> — when you sign in with Google, we receive your email address, Google account identifier, and profile name.</li>
+  <li><strong>Account information</strong> — when you sign in with Google or with Apple, we receive your email address, a pseudonymous account identifier issued by that provider, and (where you allow it) your profile name. If you use Sign in with Apple and choose to hide your email, we only ever see Apple's relay address. The provider identifier is specific to ConjuGo and is retained after account deletion for the limited purpose described in section 6.2.</li>
   <li><strong>Onboarding preferences</strong> — your first name, self-assessed French level, chosen topics, weekly schedule, and reminder preferences.</li>
   <li><strong>Learning activity</strong> — which verbs and tenses you practice, your answers (correct and incorrect), streak data, and accuracy trends.</li>
   <li><strong>Support communications</strong> — if you email us, we retain the contents to respond and improve the Service.</li>
@@ -53,7 +53,7 @@ permalink: /privacy/
 <p>For users in the European Economic Area, the United Kingdom, and Switzerland, our legal bases are:</p>
 <ul>
   <li><strong>Performance of a contract</strong> — processing necessary to provide the Service you signed up for (account, progress tracking, subscription delivery).</li>
-  <li><strong>Legitimate interests</strong> — analytics and crash reporting to maintain and improve the Service, fraud prevention, and security.</li>
+  <li><strong>Legitimate interests</strong> — analytics and crash reporting to maintain and improve the Service, security, and fraud prevention (including the free-trial record described in section 6.2, which prevents the same person claiming repeated free trials).</li>
   <li><strong>Consent</strong> — push notifications (which you can revoke at any time in iOS Settings).</li>
   <li><strong>Legal obligation</strong> — where required to retain records for tax, accounting, or regulatory compliance.</li>
 </ul>
@@ -71,9 +71,32 @@ permalink: /privacy/
 
 <p>We are based in Switzerland. The third-party services above may process your data in the United States. For users in the EEA, UK, and Switzerland, these transfers are covered by Standard Contractual Clauses and, where applicable, the EU–US Data Privacy Framework.</p>
 
-<h2>6. Data retention</h2>
+<h2>6. Data retention and account deletion</h2>
 
-<p>We keep your account data for as long as your account is active. When you delete your account, we delete your personal data within 30 days, except where retention is required by law (for example, tax records related to subscription payments, which Swiss law requires us to keep for 10 years).</p>
+<p>We keep your account data for as long as your account is active.</p>
+
+<h3>6.1 Deleting your account</h3>
+
+<p>You can delete your account at any time from within the App, under <strong>Settings → Account → Delete Account</strong>. No email or support request is required. Deletion is immediate and cannot be undone.</p>
+
+<p>When you delete your account we remove your sign-in credentials, your profile and settings, your entire practice history (verb progress, review schedule, daily statistics, streaks, per-question answer log), your chosen topics and reminders, and the copy of that data stored locally on your device.</p>
+
+<p><strong>Deleting your account does not cancel an App Store subscription.</strong> Subscriptions are managed by Apple, not by us. Cancel yours in your Apple account settings, otherwise billing continues.</p>
+
+<h3>6.2 What we keep after deletion, and why</h3>
+
+<p>Two small records outlive a deleted account. Neither contains your name, email address, or any of your learning data.</p>
+
+<ul>
+  <li><strong>A free-trial record.</strong> ConjuGo offers one free trial per person. To enforce that, we keep a single record noting that a trial was started and the date it began. It is filed under a pseudonymous identifier issued by Apple or Google that is unique to ConjuGo — it is not your email address or your Apple/Google username, and it cannot be used to identify you in any other app or service. We keep this indefinitely: if it were erased along with your account, deleting and re-registering would grant an unlimited supply of free trials. The legal basis is our legitimate interest in preventing fraud and abuse (Art. 6(1)(f) GDPR).</li>
+  <li><strong>Expired entitlement timestamps.</strong> Records of when a trial or promotional code was granted, filed under the internal account number of the deleted account. That account number no longer refers to anything, so these records cannot be linked back to you.</li>
+</ul>
+
+<p>If you want the trial record removed as well, email <a href="mailto:privacy@conjugo.me">privacy@conjugo.me</a> and we will assess the request. Note that removing it makes a further free trial available, so we may decline where we consider the request abusive, as data protection law permits when a legitimate interest in fraud prevention applies.</p>
+
+<h3>6.3 Legally required retention</h3>
+
+<p>Where the law requires us to keep records we do so regardless of deletion — for example tax records relating to subscription payments, which Swiss law requires us to retain for 10 years. Apple, not ConjuGo, holds your payment details.</p>
 
 <h2>7. Your rights</h2>
 
