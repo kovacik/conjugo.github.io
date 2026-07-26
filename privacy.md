@@ -14,7 +14,7 @@ permalink: /privacy/
 
 <p>This Privacy Policy describes how <strong>ConjuGo</strong> ("ConjuGo", "we", "us", or "our") collects, uses, and shares information when you use our iOS mobile application (the "App") and our website at <a href="https://conjugo.me">conjugo.me</a> (together, the "Service").</p>
 
-<p>ConjuGo is operated by <strong>Alojz Kovacik</strong>, based in Switzerland. If you have questions about this policy, contact us at <a href="mailto:privacy@conjugo.me">privacy@conjugo.me</a>.</p>
+<p>ConjuGo is operated by <strong>Alojz Kovacik</strong>, based in Switzerland. If you have questions about this policy, contact us at <a href="mailto:support@conjugo.me">support@conjugo.me</a>.</p>
 
 <h2>1. Information we collect</h2>
 
@@ -92,7 +92,7 @@ permalink: /privacy/
   <li><strong>Expired entitlement timestamps.</strong> Records of when a trial or promotional code was granted, filed under the internal account number of the deleted account. That account number no longer refers to anything, so these records cannot be linked back to you.</li>
 </ul>
 
-<p>If you want the trial record removed as well, email <a href="mailto:privacy@conjugo.me">privacy@conjugo.me</a> and we will assess the request. Note that removing it makes a further free trial available, so we may decline where we consider the request abusive, as data protection law permits when a legitimate interest in fraud prevention applies.</p>
+<p>If you want the trial record removed as well, email <a href="mailto:support@conjugo.me">support@conjugo.me</a> and we will assess the request. Note that removing it makes a further free trial available, so we may decline where we consider the request abusive, as data protection law permits when a legitimate interest in fraud prevention applies.</p>
 
 <h3>6.3 Legally required retention</h3>
 
@@ -111,11 +111,11 @@ permalink: /privacy/
   <li><strong>Complaint</strong> — lodge a complaint with your local data protection authority. In Switzerland, the supervisory authority is the <a href="https://www.edoeb.admin.ch/">FDPIC</a>.</li>
 </ul>
 
-<p>To exercise any of these rights, email <a href="mailto:privacy@conjugo.me">privacy@conjugo.me</a>. You can also delete your account directly from within the App under <strong>Settings → Account → Delete Account</strong>.</p>
+<p>To exercise any of these rights, email <a href="mailto:support@conjugo.me">support@conjugo.me</a>. You can also delete your account directly from within the App under <strong>Settings → Account → Delete Account</strong>.</p>
 
 <h2>8. Your California privacy rights (CCPA / CPRA)</h2>
 
-<p>California residents have the right to know what personal information we collect, to delete it, to correct it, and to opt out of its sale or sharing. ConjuGo does not sell or share personal information for cross-context behavioral advertising. To exercise your rights, email <a href="mailto:privacy@conjugo.me">privacy@conjugo.me</a>. We will not discriminate against you for exercising these rights.</p>
+<p>California residents have the right to know what personal information we collect, to delete it, to correct it, and to opt out of its sale or sharing. ConjuGo does not sell or share personal information for cross-context behavioral advertising. To exercise your rights, email <a href="mailto:support@conjugo.me">support@conjugo.me</a>. We will not discriminate against you for exercising these rights.</p>
 
 <h2>9. Children's privacy</h2>
 
@@ -132,7 +132,7 @@ permalink: /privacy/
 <h2>12. Contact us</h2>
 
 <p>For any questions or requests relating to your privacy:<br>
-Email: <a href="mailto:privacy@conjugo.me">privacy@conjugo.me</a><br>
+Email: <a href="mailto:support@conjugo.me">support@conjugo.me</a><br>
 Controller: Alojz Kovacik, Switzerland</p>
 
 </div>

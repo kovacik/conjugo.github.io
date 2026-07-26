@@ -111,7 +111,7 @@ permalink: /terms/
 
 <h2>14. Contact us</h2>
 
-<p>Questions about these Terms? Email <a href="mailto:hello@conjugo.me">hello@conjugo.me</a>.</p>
+<p>Questions about these Terms? Email <a href="mailto:support@conjugo.me">support@conjugo.me</a>.</p>
 
 </div>
 </section>
