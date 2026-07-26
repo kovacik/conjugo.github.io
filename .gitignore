@@ -2,3 +2,6 @@ Gemfile.lock
 _site/
 .jekyll-cache/
 .DS_Store
+
+# Tooling caches
+.codegraph/
