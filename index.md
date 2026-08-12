@@ -1,21 +1,21 @@
 ---
 layout: default
 title: "ConjuGo — Master French Verb Conjugation in 5 Minutes a Day"
-description: "Stop guessing French verb endings. ConjuGo is an iOS app with 6,000+ verbs, smart spaced-repetition drills, and clear grammar guides — built for learners who want to finally stop freezing mid-sentence."
+description: "Stop guessing French verb endings. ConjuGo drills 6,285 verbs across the five tenses of everyday French, with spaced repetition and plain-English grammar guides."
 ---
 
 <!-- HERO -->
 <section class="hero">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow">iPhone · Free 7-day trial</span>
+      <span class="eyebrow">iPhone &amp; iPad · Free 7-day trial</span>
       <h1>Finally, <span class="accent">French conjugation</span> that clicks.</h1>
       <p class="hero-sub">
-        <strong>6,000+ verbs. Every tense. 5 minutes a day.</strong> ConjuGo drills the exact forms you keep getting wrong — so you stop freezing mid-sentence and start speaking with confidence.
+        <strong>6,285 verbs. Five essential tenses. 5 minutes a day.</strong> ConjuGo drills the exact forms you keep getting wrong — so you stop freezing mid-sentence and start speaking with confidence.
       </p>
       <div class="cta-row">
         <a href="#download" class="btn-primary">
-          Download on iPhone →
+          Download on the App Store →
         </a>
         <a href="#how" class="btn-secondary">See how it works</a>
       </div>
@@ -45,7 +45,7 @@ description: "Stop guessing French verb endings. ConjuGo is an iOS app with 6,00
     <div class="features">
       <div class="feature">
         <div class="feature-icon">📚</div>
-        <h3>6,000+ real verbs</h3>
+        <h3>6,285 real verbs</h3>
         <p>Every French verb you'll actually meet — regular, irregular, reflexive, and the messy exceptions textbooks skip.</p>
       </div>
       <div class="feature">
@@ -66,7 +66,7 @@ description: "Stop guessing French verb endings. ConjuGo is an iOS app with 6,00
       <div class="feature">
         <div class="feature-icon">📖</div>
         <h3>Clear grammar guides</h3>
-        <p>Every tense explained in plain English, with patterns you can actually remember. Tap any verb for the full conjugation table.</p>
+        <p>Each tense explained in plain English, with patterns you can actually remember. Tap any verb for the full conjugation table.</p>
       </div>
       <div class="feature">
         <div class="feature-icon">📈</div>
@@ -109,9 +109,9 @@ description: "Stop guessing French verb endings. ConjuGo is an iOS app with 6,00
 <section>
   <div class="container showcase">
     <div>
-      <h2>Every tense, not just <em>présent</em>.</h2>
-      <p>Passé composé, imparfait, futur simple, conditionnel, subjonctif — ConjuGo covers the full map. Switch between tenses with one tap, or let the smart mix decide for you.</p>
-      <p style="color: var(--text-dim); font-size: 0.95rem;">Tenses covered: Présent · Passé Composé · Imparfait · Futur Simple · Conditionnel · Subjonctif · Plus-que-parfait · Futur Antérieur · Impératif.</p>
+      <h2>The five tenses that carry everyday French.</h2>
+      <p>Présent, passé composé, imparfait, futur simple, conditionnel présent — the tenses behind the overwhelming majority of spoken and written French. Switch between them with one tap, or let the smart mix decide for you.</p>
+      <p style="color: var(--text-dim); font-size: 0.95rem;">Tenses covered: Présent · Passé Composé · Imparfait · Futur Simple · Conditionnel Présent.<br>ConjuGo isn't an exhaustive 17-tense reference — it's a trainer for the tenses you'll actually use, done properly. If you need subjonctif and passé simple tables today, this isn't your app yet.</p>
     </div>
     <div class="visual">
       <div class="phone-shot" style="width: 260px;">
@@ -126,12 +126,12 @@ description: "Stop guessing French verb endings. ConjuGo is an iOS app with 6,00
   <div class="container">
     <div class="stats">
       <div class="stat">
-        <div class="num">6,000+</div>
+        <div class="num">6,285</div>
         <div class="label">French verbs</div>
       </div>
       <div class="stat">
-        <div class="num">9</div>
-        <div class="label">Tenses & moods</div>
+        <div class="num">5</div>
+        <div class="label">Essential tenses</div>
       </div>
       <div class="stat">
         <div class="num">5 min</div>
@@ -171,7 +171,7 @@ description: "Stop guessing French verb endings. ConjuGo is an iOS app with 6,00
       <div class="feature">
         <div class="feature-icon">🔁</div>
         <h3>Duolingo graduates</h3>
-        <p>You know the basics. Now get the precision gamified apps skip — full paradigms, every tense.</p>
+        <p>You know the basics. Now get the precision gamified apps skip — full paradigms, every person and pronoun.</p>
       </div>
       <div class="feature">
         <div class="feature-icon">👩‍🏫</div>
@@ -181,7 +181,7 @@ description: "Stop guessing French verb endings. ConjuGo is an iOS app with 6,00
       <div class="feature">
         <div class="feature-icon">❤️</div>
         <h3>Love-of-the-language learners</h3>
-        <p>Because <em>subjonctif</em> shouldn't be scary. It should click.</p>
+        <p>Because <em>imparfait</em> vs <em>passé composé</em> shouldn't be scary. It should click.</p>
       </div>
     </div>
   </div>
@@ -196,7 +196,7 @@ description: "Stop guessing French verb endings. ConjuGo is an iOS app with 6,00
     <div class="faq">
       <details>
         <summary>Do I need to know any French to start?</summary>
-        <p>Not really. The onboarding starts with a short self-assessment and picks verbs and tenses at your level. Absolute beginners start with <em>être</em>, <em>avoir</em>, and the présent; advanced learners jump straight to subjonctif and literary tenses.</p>
+        <p>Not really. The onboarding starts with a short self-assessment and picks verbs and tenses at your level. Absolute beginners start with <em>être</em>, <em>avoir</em>, and the présent; more confident learners jump straight to imparfait, futur simple and conditionnel.</p>
       </details>
       <details>
         <summary>How is this different from Duolingo or Babbel?</summary>
@@ -204,7 +204,11 @@ description: "Stop guessing French verb endings. ConjuGo is an iOS app with 6,00
       </details>
       <details>
         <summary>What's included in the free trial?</summary>
-        <p>7 days of full access — all 6,000+ verbs, every tense, smart drills, grammar guides. No credit card tricks. Cancel any time in Settings, keep using your streak data if you decide to stay.</p>
+        <p>7 days of full access — all 6,285 verbs, all five tenses, smart drills, grammar guides. No credit card tricks. Cancel any time in Settings, keep using your streak data if you decide to stay.</p>
+      </details>
+      <details>
+        <summary>What does it cost after the trial?</summary>
+        <p>Premium is $3.99 a month, or $24.99 a year if you'd rather not think about it again — that's about 48% cheaper than paying monthly. Nothing is charged during the 7-day trial, and you don't need to enter card details to start it.</p>
       </details>
       <details>
         <summary>Does it work offline?</summary>
@@ -212,7 +216,7 @@ description: "Stop guessing French verb endings. ConjuGo is an iOS app with 6,00
       </details>
       <details>
         <summary>Is there an Android version?</summary>
-        <p>Not yet. ConjuGo is iPhone-first while we get the learning engine right. Drop your email on the App Store listing to be notified when Android lands.</p>
+        <p>Not yet. ConjuGo is iOS-first while we get the learning engine right. Drop your email on the App Store listing to be notified when Android lands.</p>
       </details>
       <details>
         <summary>Will I actually improve?</summary>
@@ -231,6 +235,6 @@ description: "Stop guessing French verb endings. ConjuGo is an iOS app with 6,00
       <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
       <span class="label"><small>Download on the</small><span>App Store</span></span>
     </a>
-    <p style="margin-top: 24px; font-size: 0.85rem; opacity: 0.8;">Requires iOS 17+ · iPhone only (for now)</p>
+    <p style="margin-top: 24px; font-size: 0.85rem; opacity: 0.8;">Requires iOS 17+ · iPhone &amp; iPad</p>
   </div>
 </section>
