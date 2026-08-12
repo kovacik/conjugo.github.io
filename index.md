@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "ConjuGo — Master French Verb Conjugation in 5 Minutes a Day"
-description: "Stop guessing French verb endings. ConjuGo drills 6,285 verbs across the five tenses of everyday French, with spaced repetition and plain-English grammar guides."
+description: "Stop guessing French verb endings. ConjuGo drills 6,000+ verbs across the five tenses of everyday French, with spaced repetition and plain-English grammar guides."
 ---
 
 <!-- HERO -->
@@ -11,7 +11,7 @@ description: "Stop guessing French verb endings. ConjuGo drills 6,285 verbs acro
       <span class="eyebrow">iPhone &amp; iPad · Free 7-day trial</span>
       <h1>Finally, <span class="accent">French conjugation</span> that clicks.</h1>
       <p class="hero-sub">
-        <strong>6,285 verbs. Five essential tenses. 5 minutes a day.</strong> ConjuGo drills the exact forms you keep getting wrong — so you stop freezing mid-sentence and start speaking with confidence.
+        <strong>6,000+ verbs. Five essential tenses. 5 minutes a day.</strong> ConjuGo drills the exact forms you keep getting wrong — so you stop freezing mid-sentence and start speaking with confidence.
       </p>
       <div class="cta-row">
         <a href="#download" class="btn-primary">
@@ -28,7 +28,7 @@ description: "Stop guessing French verb endings. ConjuGo drills 6,285 verbs acro
 
     <div class="hero-visual">
       <div class="phone-shot">
-        <img src="{{ '/assets/img/screen-home.png' | relative_url }}" alt="ConjuGo home screen showing weekly progress, streak, and daily practice">
+        <img src="{{ '/assets/img/screen-home.png' | relative_url }}" alt="ConjuGo home screen showing a daily goal of 9 of 20 conjugations at 45 percent, a one-day streak, the week's practice days, and the verbs coming up next">
       </div>
     </div>
   </div>
@@ -45,7 +45,7 @@ description: "Stop guessing French verb endings. ConjuGo drills 6,285 verbs acro
     <div class="features">
       <div class="feature">
         <div class="feature-icon">📚</div>
-        <h3>6,285 real verbs</h3>
+        <h3>6,000+ real verbs</h3>
         <p>Every French verb you'll actually meet — regular, irregular, reflexive, and the messy exceptions textbooks skip.</p>
       </div>
       <div class="feature">
@@ -115,7 +115,7 @@ description: "Stop guessing French verb endings. ConjuGo drills 6,285 verbs acro
     </div>
     <div class="visual">
       <div class="phone-shot" style="width: 260px;">
-        <img src="{{ '/assets/img/screen-drill.png' | relative_url }}" alt="ConjuGo drill screen asking you to conjugate 'trouver' in the présent tense">
+        <img src="{{ '/assets/img/screen-drill.png' | relative_url }}" alt="ConjuGo drill screen asking you to conjugate 'savoir' for 'nous' in the passé composé">
       </div>
     </div>
   </div>
@@ -126,7 +126,7 @@ description: "Stop guessing French verb endings. ConjuGo drills 6,285 verbs acro
   <div class="container">
     <div class="stats">
       <div class="stat">
-        <div class="num">6,285</div>
+        <div class="num">6,000+</div>
         <div class="label">French verbs</div>
       </div>
       <div class="stat">
@@ -204,7 +204,7 @@ description: "Stop guessing French verb endings. ConjuGo drills 6,285 verbs acro
       </details>
       <details>
         <summary>What's included in the free trial?</summary>
-        <p>7 days of full access — all 6,285 verbs, all five tenses, smart drills, grammar guides. No credit card tricks. Cancel any time in Settings, keep using your streak data if you decide to stay.</p>
+        <p>7 days of full access — all 6,000+ verbs, all five tenses, smart drills, grammar guides. No credit card tricks. Cancel any time in Settings, keep using your streak data if you decide to stay.</p>
       </details>
       <details>
         <summary>What does it cost after the trial?</summary>
