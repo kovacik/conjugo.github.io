@@ -2,3 +2,4 @@ title: "ConjuGo — Master French Verb Conjugation in 5 Minutes a Day"
 description: "iOS app for French verb conjugation. 6,000+ verbs, the five tenses of everyday French, smart spaced-repetition drills. Free 7-day trial."
 url: "https://conjugo.me"
 baseurl: ""
+encoding: utf-8

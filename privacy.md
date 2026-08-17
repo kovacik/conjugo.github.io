@@ -10,7 +10,7 @@ permalink: /privacy/
 
 <h1>Privacy Policy</h1>
 
-<p><em>Last updated: 26 July 2026</em></p>
+<p><em>Last updated: 17 August 2026</em></p>
 
 <p>This Privacy Policy describes how <strong>ConjuGo</strong> ("ConjuGo", "we", "us", or "our") collects, uses, and shares information when you use our iOS mobile application (the "App") and our website at <a href="https://conjugo.me">conjugo.me</a> (together, the "Service").</p>
 
@@ -21,7 +21,7 @@ permalink: /privacy/
 <h3>1.1 Information you provide</h3>
 <ul>
   <li><strong>Account information</strong> — when you sign in with Google or with Apple, we receive your email address, a pseudonymous account identifier issued by that provider, and (where you allow it) your profile name. If you use Sign in with Apple and choose to hide your email, we only ever see Apple's relay address. The provider identifier is specific to ConjuGo and is retained after account deletion for the limited purpose described in section 6.2.</li>
-  <li><strong>Onboarding preferences</strong> — your first name, self-assessed French level, chosen topics, weekly schedule, and reminder preferences.</li>
+  <li><strong>Onboarding preferences</strong> — a username you choose (it is only used to address you inside the App and does not have to be your real name), your self-assessed French level, chosen topics, weekly schedule, and reminder preferences.</li>
   <li><strong>Learning activity</strong> — which verbs and tenses you practice, your answers (correct and incorrect), streak data, and accuracy trends.</li>
   <li><strong>Support communications</strong> — if you email us, we retain the contents to respond and improve the Service.</li>
 </ul>
@@ -64,6 +64,14 @@ permalink: /privacy/
   <li><strong>Google (Firebase)</strong> — hosts our authentication, database, analytics, and crash reporting. Data is processed in the United States. More info: <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a>.</li>
   <li><strong>Apple</strong> — handles app distribution, subscription purchases, and Sign in with Apple if used. More info: <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</li>
 </ul>
+
+<p>We may also disclose information in the following circumstances:</p>
+<ul>
+  <li><strong>Legal requirements</strong> — where disclosure is required by law, regulation, legal process, or an enforceable governmental request, or where reasonably necessary to protect the rights, property, or safety of ConjuGo, our users, or the public, including to enforce our Terms and prevent fraud or abuse.</li>
+  <li><strong>Business transfers</strong> — if ConjuGo, or substantially all of its assets, is involved in a merger, acquisition, financing, reorganization, incorporation of the business into a company, or sale of assets, your information may be transferred to the acquiring or successor entity as part of that transaction. The successor remains bound by this Privacy Policy (or one at least as protective) with respect to the transferred data, and we will notify you of any change in controller.</li>
+</ul>
+
+<p>We may use and share <strong>aggregated or de-identified information</strong> that cannot reasonably be used to identify you (for example, overall accuracy statistics for a verb across all learners) for any purpose, including improving the Service and describing it to partners.</p>
 
 <p>We do not share your data with advertisers, data brokers, or marketing networks.</p>
 
@@ -119,7 +127,7 @@ permalink: /privacy/
 
 <h2>9. Children's privacy</h2>
 
-<p>ConjuGo is not directed to children under 13 (or under 16 in the EEA). We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, contact us and we will delete it.</p>
+<p>The App's content is suitable for all ages, consistent with its App Store age rating. Creating an account, however, requires a minimum age: 13 years, or 16 in the EEA, the United Kingdom, and Switzerland unless a parent or legal guardian has consented. We do not knowingly collect personal information from children below these ages. If you believe a child has created an account or otherwise provided us with personal information, contact us at <a href="mailto:support@conjugo.me">support@conjugo.me</a> and we will delete it.</p>
 
 <h2>10. Security</h2>
 
