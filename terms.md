@@ -72,8 +72,8 @@ permalink: /terms/
 <h3>3.7 Refunds</h3>
 <p>All purchases are processed by Apple. Refund requests must be submitted to Apple through <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>. We cannot issue, approve, or refuse refunds directly, and any refund decision is Apple's. This does not affect any statutory right of withdrawal or refund you may have under the consumer law of your country of residence.</p>
 
-<h3>3.8 Promo codes</h3>
-<p>Promo codes, if applicable, are subject to their own terms. They have no cash value, cannot be combined unless explicitly stated, and may be revoked if used fraudulently.</p>
+<h3>3.8 Offer codes</h3>
+<p>Free or discounted access, where we offer it, is provided through App Store offer codes redeemed with Apple. We do not sell codes, and there is no way to unlock paid features in the App other than an App Store purchase. Offer codes have no cash value, cannot be combined unless explicitly stated, and may be revoked if used fraudulently.</p>
 
 <h2>4. License to use the App</h2>
 
