@@ -24,7 +24,7 @@ app_store_url: "https://apps.apple.com/app/id6757608840"
 # banner, no cookies. Paste the "G-XXXXXXXXXX" measurement ID from
 # Analytics → Admin → Data streams → Web to switch measurement on.
 # Setup and the console-side steps: docs/analytics-setup.md
-ga4_measurement_id: ""
+ga4_measurement_id: "G-6VLC6PKP9Q"
 
 # Both are on GitHub Pages' allowed-plugins list, so they run on the live build
 # with no Actions workflow. seo-tag writes titles, canonicals, Open Graph and
@@ -45,4 +45,4 @@ defaults:
 
 # Paste the token from Search Console's "HTML tag" verification method, minus
 # the markup — just the content value. Leave empty to emit nothing.
-google_site_verification: ""
+google_site_verification: "dqQTPvkJcwKF13xwcy5ut2rPh7w4Ze8d9mOiKOtBukI"
