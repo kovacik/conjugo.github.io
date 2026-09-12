@@ -19,6 +19,8 @@
   <link rel="icon" href="{{ '/assets/img/favicon.png' | relative_url }}" type="image/png">
   <link rel="apple-touch-icon" href="{{ '/assets/img/app-icon.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+
+  {% include analytics.html %}
 </head>
 <body>
 
@@ -29,6 +31,7 @@
   </main>
 
   {% include footer.html %}
+  {% include consent-banner.html %}
 
 </body>
 </html>

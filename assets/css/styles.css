@@ -480,3 +480,67 @@ section { padding: 80px 0; }
   margin-left: 20px;
 }
 .site-footer nav a:hover { color: var(--primary); }
+
+/* ---------- Consent banner ---------- */
+/* Sits at the bottom rather than over the hero: the first screen is the one
+   doing the selling, and a modal across it costs more conversions than the
+   analytics are worth. */
+.consent-banner {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-floating);
+}
+/* Must beat the display:flex above, or [hidden] silently does nothing. */
+.consent-banner[hidden] { display: none; }
+
+.consent-text {
+  margin: 0;
+  flex: 1 1 320px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-soft);
+}
+.consent-actions { display: flex; gap: 10px; flex-shrink: 0; }
+
+.consent-btn {
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.consent-btn-solid {
+  background: var(--primary);
+  color: #fff;
+}
+.consent-btn-solid:hover { background: var(--primary-dark); }
+.consent-btn-quiet {
+  background: transparent;
+  color: var(--text-soft);
+  border-color: var(--border);
+}
+.consent-btn-quiet:hover { background: var(--bg-soft); color: var(--text); }
+.consent-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+@media (max-width: 560px) {
+  .consent-banner { padding: 16px; }
+  .consent-actions { width: 100%; }
+  .consent-btn { flex: 1; }
+}

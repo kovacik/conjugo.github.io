@@ -10,7 +10,7 @@ permalink: /privacy/
 
 <h1>Privacy Policy</h1>
 
-<p><em>Last updated: 17 August 2026</em></p>
+<p><em>Last updated: 12 September 2026</em></p>
 
 <p>This Privacy Policy describes how <strong>ConjuGo</strong> ("ConjuGo", "we", "us", or "our") collects, uses, and shares information when you use our iOS mobile application (the "App") and our website at <a href="https://conjugo.me">conjugo.me</a> (together, the "Service").</p>
 
@@ -36,6 +36,11 @@ permalink: /privacy/
 <h3>1.3 Information we do NOT collect</h3>
 <p>ConjuGo does not collect your precise location, your contacts, your photos or camera, your microphone, your browser history, your advertising identifier (IDFA), or any payment card data. We do not show ads and we do not use remarketing or cross-app tracking.</p>
 
+<h3>1.4 Website analytics and cookies</h3>
+<p>Our website at <a href="https://conjugo.me">conjugo.me</a> uses <strong>Google Analytics 4</strong> to count visits and to see which pages actually lead people to the App. Analytics cookies are stored <strong>only if you accept them</strong> in the banner shown on your first visit. If you decline — or simply ignore the banner — nothing is written to your device, and Google receives only a cookieless, aggregated signal that a page was viewed.</p>
+<p>Where you have accepted, we record the page you viewed, the site or search engine that referred you, your approximate location (country or region, derived from your IP address and not stored by us), and whether you clicked through to the App Store. We do <strong>not</strong> use advertising cookies, remarketing, or cross-site tracking on the website: Google's advertising signals are switched off at the tag, so your visit never feeds an advertising audience.</p>
+<p>You can withdraw your acceptance at any time by clearing this site's stored data in your browser, which makes the banner appear again. The App itself sets no cookies; it is covered by section 1.2.</p>
+
 <h2>2. How we use your information</h2>
 
 <ul>
@@ -54,7 +59,7 @@ permalink: /privacy/
 <ul>
   <li><strong>Performance of a contract</strong> — processing necessary to provide the Service you signed up for (account, progress tracking, subscription delivery).</li>
   <li><strong>Legitimate interests</strong> — analytics and crash reporting to maintain and improve the Service, security, and fraud prevention (including the free-trial record described in section 6.2, which prevents the same person claiming repeated free trials).</li>
-  <li><strong>Consent</strong> — push notifications (which you can revoke at any time in iOS Settings).</li>
+  <li><strong>Consent</strong> — push notifications (which you can revoke at any time in iOS Settings), and website analytics cookies (which you can decline in the banner, or withdraw later by clearing this site's data).</li>
   <li><strong>Legal obligation</strong> — where required to retain records for tax, accounting, or regulatory compliance.</li>
 </ul>
 
@@ -62,6 +67,7 @@ permalink: /privacy/
 
 <ul>
   <li><strong>Google (Firebase)</strong> — hosts our authentication, database, analytics, and crash reporting. Data is processed in the United States. More info: <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a>.</li>
+  <li><strong>Google (Analytics)</strong> — measures website traffic at conjugo.me, as described in section 1.4, and only where you have accepted analytics cookies. Data is processed in the United States. More info: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
   <li><strong>Apple</strong> — handles app distribution, subscription purchases, and Sign in with Apple if used. More info: <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</li>
 </ul>
 

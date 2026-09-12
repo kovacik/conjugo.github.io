@@ -1,0 +1,44 @@
+{%- if site.ga4_measurement_id and site.ga4_measurement_id != "" -%}
+<!-- Accept and Decline carry equal visual weight on purpose: EEA/UK/Swiss
+     regulators treat a prominent Accept next to a buried Decline as invalid
+     consent, which would make the whole tag unlawful rather than merely rude. -->
+<div id="consent-banner" class="consent-banner" hidden role="region" aria-label="Analytics consent">
+  <p class="consent-text">
+    We measure which pages bring people to ConjuGo, so we know what's worth writing more of.
+    Analytics only — no advertising, no tracking across other sites.
+    <a href="{{ '/privacy/' | relative_url }}">How we handle data</a>
+  </p>
+  <div class="consent-actions">
+    <button type="button" id="consent-decline" class="consent-btn consent-btn-quiet">Decline</button>
+    <button type="button" id="consent-accept" class="consent-btn consent-btn-solid">Accept</button>
+  </div>
+</div>
+<script>
+  (function () {
+    var KEY = 'conjugo_consent';
+    var banner = document.getElementById('consent-banner');
+    if (!banner) return;
+
+    var stored = null;
+    try { stored = localStorage.getItem(KEY); } catch (e) { /* blocked */ }
+
+    // A decision already exists — never ask twice.
+    if (stored === 'granted' || stored === 'denied') return;
+
+    banner.hidden = false;
+
+    function choose(value) {
+      try { localStorage.setItem(KEY, value); } catch (e) { /* blocked */ }
+      if (value === 'granted' && typeof gtag === 'function') {
+        gtag('consent', 'update', { analytics_storage: 'granted' });
+      }
+      banner.hidden = true;
+    }
+
+    document.getElementById('consent-accept')
+      .addEventListener('click', function () { choose('granted'); });
+    document.getElementById('consent-decline')
+      .addEventListener('click', function () { choose('denied'); });
+  })();
+</script>
+{%- endif -%}

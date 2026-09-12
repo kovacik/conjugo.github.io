@@ -4,8 +4,21 @@ url: "https://conjugo.me"
 baseurl: ""
 encoding: utf-8
 
+# Internal notes — not part of the published site.
+exclude:
+  - docs
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
 # The App Store listing — the one place this lives, so the hero CTA, the badge
 # and the iOS smart banner can never drift apart. The URL is deliberately
 # storefront-agnostic: Apple redirects each visitor to their own storefront.
 app_store_id: "6757608840"
 app_store_url: "https://apps.apple.com/app/id6757608840"
+
+# GA4 web data stream. Leave empty and NOTHING is emitted — no tag, no consent
+# banner, no cookies. Paste the "G-XXXXXXXXXX" measurement ID from
+# Analytics → Admin → Data streams → Web to switch measurement on.
+# Setup and the console-side steps: docs/analytics-setup.md
+ga4_measurement_id: ""

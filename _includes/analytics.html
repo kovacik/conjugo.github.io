@@ -1,0 +1,49 @@
+{%- if site.ga4_measurement_id and site.ga4_measurement_id != "" -%}
+<!-- Google Analytics 4, Consent Mode v2.
+     Every storage type defaults to `denied`, so a visitor who never touches the
+     banner is measured cookielessly: Google still receives a pageview ping, but
+     nothing is written to their device. consent-banner.html is the only thing
+     that flips analytics_storage, and only on an explicit Accept.
+     The ad_* signals stay denied permanently — this site runs no ads and feeds
+     no remarketing audience. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4_measurement_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    functionality_storage: 'granted',
+    security_storage: 'granted',
+    wait_for_update: 500
+  });
+
+  // A returning visitor who already accepted: restore it before the first
+  // pageview fires, or that pageview lands cookieless and the session splits.
+  try {
+    if (localStorage.getItem('conjugo_consent') === 'granted') {
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+    }
+  } catch (e) { /* private mode, blocked storage — stay denied */ }
+
+  gtag('js', new Date());
+  gtag('config', '{{ site.ga4_measurement_id }}');
+
+  // This site has exactly one conversion: leaving it for the App Store.
+  // Same-document navigation means GA4's enhanced measurement does NOT count
+  // these as outbound clicks, so they are sent explicitly.
+  document.addEventListener('click', function (event) {
+    var target = event.target;
+    if (!target || typeof target.closest !== 'function') return;
+    var link = target.closest('a[href*="apps.apple.com"]');
+    if (!link) return;
+    gtag('event', 'app_store_click', {
+      link_location: link.getAttribute('data-cta') || 'unknown',
+      page_path: window.location.pathname
+    });
+  });
+</script>
+{%- endif -%}
