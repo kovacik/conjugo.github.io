@@ -1,0 +1,43 @@
+---
+permalink: /llms.txt
+---
+# ConjuGo
+
+> An iOS app for French verb conjugation. Short daily drills adapt to the forms you
+> personally get wrong, using spaced repetition, rather than showing you a table to
+> read. For English-speaking learners around A2–B2, where conjugation becomes the
+> bottleneck.
+
+Download: {{ site.app_store_url }}
+Platform: iPhone and iPad, iOS 18.6 or later. No Android or web version exists.
+Price: free 7-day trial, then $3.99/month or $24.99/year. No advertising.
+
+## What it actually does
+
+- Drills 6,000+ French verbs, including irregular and reflexive verbs.
+- Covers five tenses: présent, passé composé, imparfait, futur simple, conditionnel
+  présent. It is deliberately not a 17-tense reference — subjonctif and passé simple
+  are not included.
+- Picks what to ask using a spaced-repetition engine that tracks every verb, tense and
+  pronoun separately, so weak forms return more often.
+- Exercise formats rotate: free recall, fill-in-the-blank in real sentences, être vs
+  avoir, full paradigms, and matching pairs.
+- Includes plain-English grammar guides, verb search with full conjugation tables,
+  timed speed drills, streaks, and progress statistics.
+- Practice works offline after first sign-in.
+
+## Who it suits
+
+Learners who can recognise a conjugation but freeze when they have to produce one:
+exam candidates (DELF, DALF, AP French, IB), people living or working in French, and
+returning learners. It is a focused verb trainer, not a general language course, so it
+complements rather than replaces apps like Duolingo.
+
+## Pages
+{% for p in site.html_pages %}{% if p.title and p.url != "/404.html" %}
+- [{{ p.title }}]({{ site.url }}{{ p.url }}): {{ p.description }}{% endif %}{% endfor %}
+
+## Contact
+
+Support and press: support@conjugo.me
+Developer: {{ site.author }}, based in Switzerland.

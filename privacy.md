@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Privacy Policy — ConjuGo"
+title: "Privacy Policy"
 description: "How ConjuGo collects, uses, and protects your information."
 permalink: /privacy/
 ---

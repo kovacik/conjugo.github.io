@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "ConjuGo — Master French Verb Conjugation in 5 Minutes a Day"
-description: "Stop guessing French verb endings. ConjuGo drills 6,000+ verbs across the five tenses of everyday French, with spaced repetition and plain-English grammar guides."
+title: "Master French Verb Conjugation in 5 Minutes a Day"
+description: "Stop guessing French verb endings. ConjuGo drills 6,000+ verbs across the five tenses of everyday French, with spaced repetition that targets your mistakes."
 ---
 
 <!-- HERO -->

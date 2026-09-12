@@ -1,0 +1,64 @@
+{%- if page.url == "/" -%}
+<!-- MobileApplication JSON-LD. This is what lets Google show price and platform
+     in a rich result, and what AI assistants read when asked to recommend a
+     French conjugation app.
+
+     Deliberately NO aggregateRating: the app has no ratings yet, and inventing
+     one is both dishonest and a manual-action risk. Add it here once App Store
+     ratings exist, and keep the number honest — Google cross-checks. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Conjugo: French Conjugation",
+  "alternateName": "ConjuGo",
+  "description": "Daily adaptive drills for French verb conjugation: 6,000+ verbs across the five tenses of everyday French, with spaced repetition that resurfaces the forms you get wrong.",
+  "applicationCategory": "EducationalApplication",
+  "applicationSubCategory": "Language Learning",
+  "operatingSystem": "iOS 18.6 or later",
+  "url": "{{ site.url }}",
+  "installUrl": "{{ site.app_store_url }}",
+  "downloadUrl": "{{ site.app_store_url }}",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ConjuGo",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}{{ site.logo }}"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Premium monthly",
+      "price": "3.99",
+      "priceCurrency": "USD",
+      "category": "subscription"
+    },
+    {
+      "@type": "Offer",
+      "name": "Premium annual",
+      "price": "24.99",
+      "priceCurrency": "USD",
+      "category": "subscription"
+    }
+  ],
+  "featureList": [
+    "6,000+ French verbs",
+    "Présent, passé composé, imparfait, futur simple and conditionnel présent",
+    "Spaced-repetition drills adapted to your own mistakes",
+    "Fill-in-the-blank practice using real sentences",
+    "Full conjugation paradigms and verb search",
+    "Plain-English grammar guides",
+    "Offline practice"
+  ],
+  "screenshot": [
+    "{{ site.url }}/assets/img/screen-home.png",
+    "{{ site.url }}/assets/img/screen-drill.png"
+  ]
+}
+</script>
+{%- endif -%}

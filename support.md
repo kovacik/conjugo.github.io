@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Support — ConjuGo"
+title: "Support"
 description: "Help with ConjuGo: subscriptions, your account, progress and privacy."
 permalink: /support/
 ---

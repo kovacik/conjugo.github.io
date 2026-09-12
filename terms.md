@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Terms of Service — ConjuGo"
+title: "Terms of Service"
 description: "The terms that govern your use of ConjuGo."
 permalink: /terms/
 ---

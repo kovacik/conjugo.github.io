@@ -1,4 +1,7 @@
-title: "ConjuGo — Master French Verb Conjugation in 5 Minutes a Day"
+# The brand alone. jekyll-seo-tag appends this to each page's own title, so a
+# page titled "Support" renders as "Support | ConjuGo".
+title: "ConjuGo"
+tagline: "Master French Verb Conjugation in 5 Minutes a Day"
 description: "iOS app for French verb conjugation. 6,000+ verbs, the five tenses of everyday French, smart spaced-repetition drills. Free 7-day trial."
 url: "https://conjugo.me"
 baseurl: ""
@@ -22,3 +25,24 @@ app_store_url: "https://apps.apple.com/app/id6757608840"
 # Analytics → Admin → Data streams → Web to switch measurement on.
 # Setup and the console-side steps: docs/analytics-setup.md
 ga4_measurement_id: ""
+
+# Both are on GitHub Pages' allowed-plugins list, so they run on the live build
+# with no Actions workflow. seo-tag writes titles, canonicals, Open Graph and
+# WebSite JSON-LD; sitemap generates /sitemap.xml from the pages themselves.
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+author: "Alojz Kovacik"
+logo: /assets/img/app-icon.png
+
+# seo-tag reads og:image from the page, so give every page the same default.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/app-icon.png
+
+# Paste the token from Search Console's "HTML tag" verification method, minus
+# the markup — just the content value. Leave empty to emit nothing.
+google_site_verification: ""
