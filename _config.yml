@@ -3,3 +3,9 @@ description: "iOS app for French verb conjugation. 6,000+ verbs, the five tenses
 url: "https://conjugo.me"
 baseurl: ""
 encoding: utf-8
+
+# The App Store listing — the one place this lives, so the hero CTA, the badge
+# and the iOS smart banner can never drift apart. The URL is deliberately
+# storefront-agnostic: Apple redirects each visitor to their own storefront.
+app_store_id: "6757608840"
+app_store_url: "https://apps.apple.com/app/id6757608840"

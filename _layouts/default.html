@@ -6,6 +6,9 @@
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
 
+  <!-- Safari on iOS turns this into a native "Open in App Store" banner -->
+  <meta name="apple-itunes-app" content="app-id={{ site.app_store_id }}">
+
   <!-- Open Graph / social -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ page.title | default: site.title }}">
