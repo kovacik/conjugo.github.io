@@ -111,7 +111,7 @@ description: "Stop guessing French verb endings. ConjuGo drills 6,000+ verbs acr
     <div>
       <h2>The five tenses that carry everyday French.</h2>
       <p>Présent, passé composé, imparfait, futur simple, conditionnel présent — the tenses behind the overwhelming majority of spoken and written French. Switch between them with one tap, or let the smart mix decide for you.</p>
-      <p style="color: var(--text-dim); font-size: 0.95rem;">Tenses covered: Présent · Passé Composé · Imparfait · Futur Simple · Conditionnel Présent.<br>ConjuGo isn't an exhaustive 17-tense reference — it's a trainer for the tenses you'll actually use, done properly. If you need subjonctif and passé simple tables today, this isn't your app yet.</p>
+      <p style="color: var(--text-dim); font-size: 0.95rem;">Tenses covered: Présent · Passé Composé · Imparfait · Futur Simple · Conditionnel Présent.</p>
     </div>
     <div class="visual">
       <div class="phone-shot" style="width: 260px;">
