@@ -1,0 +1,40 @@
+# Tell Bing (and every other IndexNow engine) what changed, after each deploy.
+#
+# Bing's index is the one ChatGPT search, Microsoft Copilot and DuckDuckGo read
+# from, so for this site it is how pages reach AI answers — Google has no
+# equivalent push API for ordinary pages.
+#
+# Runs on page_build, which GitHub fires when a branch-based Pages build
+# finishes; it does not deploy anything and cannot affect the site. The key is
+# public by design: ownership is proven by /3d27f1e1c57978bca4bfc61e6ed21f20.txt being served
+# from the same host, so it is safe to keep here rather than in a secret.
+
+name: IndexNow
+
+on:
+  page_build:
+  workflow_dispatch:
+
+jobs:
+  submit:
+    if: github.event_name == 'workflow_dispatch' || github.event.build.status == 'built'
+    runs-on: ubuntu-latest
+    env:
+      KEY: 3d27f1e1c57978bca4bfc61e6ed21f20
+      HOST: conjugo.me
+    steps:
+      - name: Wait for the CDN to serve the new build
+        run: sleep 60
+
+      - name: Submit every URL in the sitemap
+        run: |
+          set -euo pipefail
+          urls=$(curl -fsSL "https://$HOST/sitemap.xml" | grep -oE '<loc>[^<]+' | sed 's/<loc>//' | jq -R . | jq -sc .)
+          echo "Submitting: $urls"
+          code=$(curl -sS -o response.txt -w '%{http_code}' -X POST "https://api.indexnow.org/indexnow" \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            -d "{\"host\":\"$HOST\",\"key\":\"$KEY\",\"keyLocation\":\"https://$HOST/$KEY.txt\",\"urlList\":$urls}")
+          echo "IndexNow responded HTTP $code"; cat response.txt || true
+          # 200 = accepted, 202 = accepted and key validation pending. Anything
+          # else (403 bad key, 422 host mismatch, 429 throttled) should be seen.
+          [ "$code" = "200" ] || [ "$code" = "202" ]

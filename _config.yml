@@ -54,4 +54,11 @@ defaults:
 
 # Paste the token from Search Console's "HTML tag" verification method, minus
 # the markup — just the content value. Leave empty to emit nothing.
+# IndexNow: the key file 3d27f1e1c57978bca4bfc61e6ed21f20.txt at the site root proves ownership; the
+# .github/workflows/indexnow.yml job submits the sitemap to Bing, Yandex and
+# the other IndexNow engines after every Pages build. Bing's index is the one
+# ChatGPT search, Copilot and DuckDuckGo read, so this is how the site reaches
+# AI answers. The key is public by design — it is not a secret.
+indexnow_key: "3d27f1e1c57978bca4bfc61e6ed21f20"
+
 google_site_verification: "dqQTPvkJcwKF13xwcy5ut2rPh7w4Ze8d9mOiKOtBukI"

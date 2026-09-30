@@ -16,7 +16,12 @@
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
   <link rel="icon" href="{{ '/assets/img/favicon.png' | relative_url }}" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  <!-- The stylesheet is inlined, not linked. Lighthouse measured the hero text
+       as the LCP element, fully rendered but held ~2.8 s behind this one
+       render-blocking request on GitHub Pages' slow first byte. 16 KB inline
+       (~4 KB gzipped) on a four-page site costs less than that round trip. -->
+  <style>{% include styles.css %}</style>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
   {% include analytics.html %}
   {% include app-schema.html %}

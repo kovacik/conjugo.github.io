@@ -2,6 +2,10 @@
 :root {
   --primary: #7B68EE;
   --primary-dark: #6A5ACD;
+  /* Filled surfaces carrying white text use primary-dark (5.31:1), not primary
+     (#7B68EE is 4.15:1 — under WCAG's 4.5:1 for normal text). primary-deep is
+     their hover state, so hovering still visibly darkens. */
+  --primary-deep: #5B45D6;
   --primary-light: #9F8FEF;
   --accent: #8B7CE8;
   --fr-blue: #0055A4;
@@ -12,7 +16,8 @@
   --surface: #FFFFFF;
   --text: #1C1C1E;
   --text-soft: #5A5A60;
-  --text-dim: #8E8E93;
+  /* Was #8E8E93: 3.26:1 on white. This is 5.07:1 on white, 4.81:1 on bg-soft. */
+  --text-dim: #6E6E73;
   --success: #34C759;
   --warning: #FF9500;
   --border: #ECECF1;
@@ -98,7 +103,7 @@ p { margin: 0 0 1em; color: var(--text-soft); }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--primary);
+  background: var(--primary-dark);
   color: #fff;
   font-weight: 600;
   padding: 10px 18px;
@@ -106,7 +111,7 @@ p { margin: 0 0 1em; color: var(--text-soft); }
   box-shadow: var(--shadow-card);
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
-.nav-cta:hover { background: var(--primary-dark); color: #fff; transform: translateY(-1px); box-shadow: var(--shadow-elevated); }
+.nav-cta:hover { background: var(--primary-deep); color: #fff; transform: translateY(-1px); box-shadow: var(--shadow-elevated); }
 
 /* ---------- Hero ---------- */
 .hero {
@@ -156,7 +161,7 @@ p { margin: 0 0 1em; color: var(--text-soft); }
 .cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
 .btn-primary {
   display: inline-flex; align-items: center; gap: 10px;
-  background: var(--primary);
+  background: var(--primary-dark);
   color: #fff;
   font-weight: 600;
   padding: 14px 24px;
@@ -530,10 +535,10 @@ section { padding: 80px 0; }
   transition: background 0.15s ease, color 0.15s ease;
 }
 .consent-btn-solid {
-  background: var(--primary);
+  background: var(--primary-dark);
   color: #fff;
 }
-.consent-btn-solid:hover { background: var(--primary-dark); }
+.consent-btn-solid:hover { background: var(--primary-deep); }
 .consent-btn-quiet {
   background: transparent;
   color: var(--text-soft);

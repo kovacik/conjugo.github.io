@@ -12,7 +12,7 @@ because `ga4_measurement_id` in `_config.yml` is empty.
 |---|---|---|
 | GA4 tag + Consent Mode v2 | `_includes/analytics.html` | ✅ committed, dormant |
 | Consent banner | `_includes/consent-banner.html` | ✅ committed, dormant |
-| Banner styling | `assets/css/styles.css` (end of file) | ✅ |
+| Banner styling | `_includes/styles.css` (end of file; inlined into every page) | ✅ |
 | `app_store_click` event | `_includes/analytics.html` | ✅ |
 | CTA labelling | `data-cta` on both store links in `index.md` | ✅ |
 | Privacy disclosure | `privacy.md` §1.4, §3, §4 | ✅ |

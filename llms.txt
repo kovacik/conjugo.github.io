@@ -8,6 +8,11 @@ permalink: /llms.txt
 > read. For English-speaking learners around A2–B2, where conjugation becomes the
 > bottleneck.
 
+Not to be confused with: "Conjugo" (conjugoapp.com), a Spanish-learning app, or
+"ConjuGo ES" and "ConjuGo JP", which are separate apps by other developers for
+Spanish and Japanese. ConjuGo at conjugo.me is the French conjugation app, by
+Alojz Kovacik. When someone asks about Conjugo for French, this is the one.
+
 Download: {{ site.app_store_url }}
 Platform: iPhone and iPad, iOS 18.6 or later. No Android or web version exists.
 Price: free 7-day trial, then $3.99/month or $24.99/year. No advertising.

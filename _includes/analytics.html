@@ -1,12 +1,20 @@
 {%- if site.ga4_measurement_id and site.ga4_measurement_id != "" -%}
-<!-- Google Analytics 4, Consent Mode v2.
+<!-- Google Analytics 4, Consent Mode v2 — loaded after the page has rendered.
+
      Every storage type defaults to `denied`, so a visitor who never touches the
      banner is measured cookielessly: Google still receives a pageview ping, but
      nothing is written to their device. consent-banner.html is the only thing
      that flips analytics_storage, and only on an explicit Accept.
      The ad_* signals stay denied permanently — this site runs no ads and feeds
-     no remarketing audience. -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4_measurement_id }}"></script>
+     no remarketing audience.
+
+     gtag.js is ~70 KB of mostly-unused JavaScript. Requested in the <head>, it
+     competed with the stylesheet and the hero screenshot for bandwidth on a slow
+     connection — which is exactly when a first visit is judged. So the stub and
+     every command below run immediately (they only queue into dataLayer), and
+     the library itself is fetched once the page has loaded, or the moment a
+     visitor interacts, whichever comes first. Nothing queued is lost: gtag.js
+     replays dataLayer when it arrives. -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
@@ -32,6 +40,34 @@
   gtag('js', new Date());
   gtag('config', '{{ site.ga4_measurement_id }}');
 
+  (function () {
+    var requested = false;
+    window.__cjAnalyticsReady = false;
+
+    function load() {
+      if (requested) return;
+      requested = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.ga4_measurement_id }}';
+      s.onload = function () { window.__cjAnalyticsReady = true; };
+      document.head.appendChild(s);
+    }
+    window.__cjLoadAnalytics = load;
+
+    function whenIdle() {
+      if ('requestIdleCallback' in window) requestIdleCallback(load, { timeout: 2500 });
+      else setTimeout(load, 1500);
+    }
+    if (document.readyState === 'complete') whenIdle();
+    else window.addEventListener('load', whenIdle, { once: true });
+
+    // Any sign of a real visitor fetches it now rather than at idle.
+    ['pointerdown', 'keydown', 'touchstart'].forEach(function (type) {
+      window.addEventListener(type, load, { once: true, passive: true });
+    });
+  })();
+
   // This site has exactly one conversion: leaving it for the App Store.
   // Same-document navigation means GA4's enhanced measurement does NOT count
   // these as outbound clicks, so they are sent explicitly.
@@ -40,10 +76,32 @@
     if (!target || typeof target.closest !== 'function') return;
     var link = target.closest('a[href*="apps.apple.com"]');
     if (!link) return;
-    gtag('event', 'app_store_click', {
+
+    var params = {
       link_location: link.getAttribute('data-cta') || 'unknown',
       page_path: window.location.pathname
-    });
+    };
+
+    // The normal case: the library is here and sends by beacon, which
+    // survives the navigation. Nothing to wait for.
+    if (window.__cjAnalyticsReady) { gtag('event', 'app_store_click', params); return; }
+
+    // A new-tab click leaves this page alive, so the queued event will send.
+    var newTab = event.metaKey || event.ctrlKey || event.shiftKey ||
+                 event.button !== 0 || link.target === '_blank';
+    if (newTab) { gtag('event', 'app_store_click', params); return; }
+
+    // A same-tab tap before the library has arrived. Letting the navigation go
+    // would drop the one event this site exists to record, so hold it — only
+    // in this case, and never for long.
+    event.preventDefault();
+    var gone = false;
+    function go() { if (gone) return; gone = true; window.location.href = link.href; }
+    params.event_callback = go;
+    params.event_timeout = 800;
+    gtag('event', 'app_store_click', params);
+    window.__cjLoadAnalytics();
+    setTimeout(go, 900); // if the library never arrives (blocked, offline), leave anyway
   });
 </script>
 {%- endif -%}

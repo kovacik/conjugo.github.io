@@ -168,6 +168,16 @@ def main() -> int:
             fail(f"og:image declares {declared}, expected {OG_SIZE} — Slack and "
                  "LinkedIn render summary_large_image cards at this ratio")
 
+    # --- IndexNow key file is published and matches the configured key ---
+    config = (SITE.parent / "_config.yml").read_text()
+    key_m = re.search(r'^indexnow_key:\s*"([0-9a-f]{32})"', config, re.M)
+    if key_m:
+        key_file = SITE / f"{key_m.group(1)}.txt"
+        if not key_file.is_file():
+            fail(f"IndexNow key file /{key_file.name} is not published")
+        elif key_file.read_text().strip() != key_m.group(1):
+            fail("IndexNow key file content does not match indexnow_key")
+
     # --- the homepage carries the app schema and a real store link ---------
     home = (SITE / "index.html").read_text()
     if "MobileApplication" not in home:
