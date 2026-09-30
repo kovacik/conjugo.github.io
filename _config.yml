@@ -37,11 +37,20 @@ author: "Alojz Kovacik"
 logo: /assets/img/app-icon.png
 
 # seo-tag reads og:image from the page, so give every page the same default.
+#
+# A 1200x630 card, not the app icon. twitter:card is summary_large_image, so
+# Slack, LinkedIn and iMessage render og:image full-width: pointing it at a
+# square 1024px icon produced a giant logo in every link preview. Width and
+# height are declared so previews lay out before the image downloads.
 defaults:
   - scope:
       path: ""
     values:
-      image: /assets/img/app-icon.png
+      image:
+        path: /assets/img/og-card.jpg
+        width: 1200
+        height: 630
+        alt: "ConjuGo — French conjugation drills for iPhone and iPad"
 
 # Paste the token from Search Console's "HTML tag" verification method, minus
 # the markup — just the content value. Leave empty to emit nothing.

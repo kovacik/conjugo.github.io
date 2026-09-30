@@ -11,8 +11,11 @@
   <!-- Safari on iOS turns this into a native "Open in App Store" banner -->
   <meta name="apple-itunes-app" content="app-id={{ site.app_store_id }}">
 
-  <link rel="icon" href="{{ '/assets/img/favicon.png' | relative_url }}" type="image/png">
-  <link rel="apple-touch-icon" href="{{ '/assets/img/app-icon.png' | relative_url }}">
+  <!-- favicon.ico and apple-touch-icon.png also live at the site root because
+       browsers and iOS request those exact paths whether or not they are linked. -->
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="icon" href="{{ '/assets/img/favicon.png' | relative_url }}" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
   {% include analytics.html %}

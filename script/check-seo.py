@@ -26,6 +26,14 @@ SITE = Path(__file__).resolve().parent.parent / "_site"
 # sentence in a search result is a self-inflicted wound.
 MAX_DESCRIPTION = 157
 
+# Image weight budget. The site once shipped one 1 MB, 1024px PNG as its
+# favicon, touch icon AND social card, plus a 990 KB hero screenshot shown at
+# 280px — every visit downloaded ~2 MB of pixels nobody could see.
+MAX_IMAGE_BYTES = 150 * 1024
+MAX_FAVICON_BYTES = 8 * 1024
+OG_SIZE = (1200, 630)
+IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".avif", ".ico"}
+
 failures: list[str] = []
 
 
@@ -127,6 +135,38 @@ def main() -> int:
                     f"{url} JSON-LD declares an aggregateRating — only keep this "
                     "if the App Store rating is real and current"
                 )
+
+    # --- image weight: nothing served may blow the budget -----------------
+    for img in sorted(p for p in SITE.rglob("*") if p.suffix.lower() in IMAGE_EXTS):
+        size = img.stat().st_size
+        rel = img.relative_to(SITE)
+        limit = MAX_FAVICON_BYTES if img.name.startswith("favicon") else MAX_IMAGE_BYTES
+        if size > limit:
+            fail(f"/{rel} is {size // 1024} KB, over the {limit // 1024} KB budget")
+
+    # --- every <img> reserves its space, or the page jumps as it loads ----
+    for path in page_files():
+        html = path.read_text()
+        for tag in re.findall(r"<img\b[^>]*>", html):
+            if not (re.search(r'\swidth="\d+"', tag) and re.search(r'\sheight="\d+"', tag)):
+                src = re.search(r'src="([^"]+)"', tag)
+                fail(f"{url_for(path)} has an <img> without width/height: {src.group(1) if src else tag[:60]}")
+
+    # --- the social card is a real card, and it exists --------------------
+    home_html = (SITE / "index.html").read_text()
+    og = re.search(r'<meta property="og:image" content="([^"]+)"', home_html)
+    if not og:
+        fail("homepage has no og:image")
+    else:
+        local = SITE / og.group(1).replace("https://conjugo.me/", "")
+        if not local.is_file():
+            fail(f"og:image points at a file that is not built: {og.group(1)}")
+        w = re.search(r'<meta property="og:image:width" content="(\d+)"', home_html)
+        h = re.search(r'<meta property="og:image:height" content="(\d+)"', home_html)
+        declared = (int(w.group(1)), int(h.group(1))) if w and h else None
+        if declared != OG_SIZE:
+            fail(f"og:image declares {declared}, expected {OG_SIZE} — Slack and "
+                 "LinkedIn render summary_large_image cards at this ratio")
 
     # --- the homepage carries the app schema and a real store link ---------
     home = (SITE / "index.html").read_text()

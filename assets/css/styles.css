@@ -233,6 +233,9 @@ p { margin: 0 0 1em; color: var(--text-soft); }
 }
 .phone-shot img {
   width: 100%;
+  /* Required once the img carries width/height attributes: without it the
+     attribute height wins and the screenshot is squashed to fit. */
+  height: auto;
   display: block;
   border-radius: 34px;
 }

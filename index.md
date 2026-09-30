@@ -28,7 +28,13 @@ description: "Stop guessing French verb endings. ConjuGo drills 6,000+ verbs acr
 
     <div class="hero-visual">
       <div class="phone-shot">
-        <img src="{{ '/assets/img/screen-home.png' | relative_url }}" alt="ConjuGo home screen showing a daily goal of 9 of 20 conjugations at 45 percent, a one-day streak, the week's practice days, and the verbs coming up next">
+        <picture>
+          <source type="image/webp" sizes="280px"
+                  srcset="{{ '/assets/img/screen-home-600.webp' | relative_url }} 600w, {{ '/assets/img/screen-home-900.webp' | relative_url }} 900w">
+          <img src="{{ '/assets/img/screen-home-600.jpg' | relative_url }}" width="280" height="608"
+               fetchpriority="high" decoding="async"
+               alt="ConjuGo home screen showing a daily goal of 9 of 20 conjugations at 45 percent, a one-day streak, the week's practice days, and the verbs coming up next">
+        </picture>
       </div>
     </div>
   </div>
@@ -115,7 +121,13 @@ description: "Stop guessing French verb endings. ConjuGo drills 6,000+ verbs acr
     </div>
     <div class="visual">
       <div class="phone-shot" style="width: 260px;">
-        <img src="{{ '/assets/img/screen-drill.png' | relative_url }}" alt="ConjuGo drill screen asking you to conjugate 'savoir' for 'nous' in the passé composé">
+        <picture>
+          <source type="image/webp" sizes="240px"
+                  srcset="{{ '/assets/img/screen-drill-600.webp' | relative_url }} 600w, {{ '/assets/img/screen-drill-900.webp' | relative_url }} 900w">
+          <img src="{{ '/assets/img/screen-drill-600.jpg' | relative_url }}" width="240" height="521"
+               loading="lazy" decoding="async"
+               alt="ConjuGo drill screen asking you to conjugate 'savoir' for 'nous' in the passé composé">
+        </picture>
       </div>
     </div>
   </div>
