@@ -245,6 +245,14 @@ p { margin: 0 0 1em; color: var(--text-soft); }
   border-radius: 34px;
 }
 
+/* The hero phone tilts the same 4° as the social card (assets/img/og-card.jpg),
+   so the page someone lands on continues the preview they clicked in Slack.
+   Only the hero: the drill screenshot further down carries a question meant to
+   be read, and a second tilt would turn one gesture into a pattern.
+   A transform changes nothing about layout, so there is no shift, and .hero's
+   overflow:hidden keeps the rotated corners from widening the page. */
+.hero-visual .phone-shot { transform: rotate(4deg); }
+
 /* In-phone mock UI */
 .app-home {
   padding: 48px 18px 18px;
