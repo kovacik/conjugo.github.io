@@ -64,7 +64,7 @@ per referrer and per country — which is the whole point of measuring this site
 2. **Realtime** in GA4 shows one user. Cookies: none yet (check DevTools → Application).
 3. Click **Accept** → `_ga` cookies appear.
 4. Click **Download on the App Store** → `app_store_click` shows in Realtime within ~30s,
-   with `link_location = hero` or `footer_badge`.
+   with `link_location = nav` (header, every page), `hero` or `footer_badge`.
 5. In another private window, click **Decline** → no `_ga` cookie is ever written, and Realtime
    still counts the visit. That cookieless count is Consent Mode working, not a bug.
 
