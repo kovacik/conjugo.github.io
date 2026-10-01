@@ -212,7 +212,7 @@ description: "Stop guessing French verb endings. ConjuGo drills 6,000+ verbs acr
       </details>
       <details>
         <summary>How is this different from Duolingo or Babbel?</summary>
-        <p>ConjuGo does one thing extremely well: verb conjugation. It's not a general-purpose language app — it's a focused trainer for the single skill most learners get stuck on. If you already know vocabulary but your verb endings still come out wrong, this is built for you.</p>
+        <p>ConjuGo does one thing extremely well: verb conjugation. It's not a general-purpose language app — it's a focused trainer for the single skill most learners get stuck on. If you already know vocabulary but your verb endings still come out wrong, this is built for you. For a side-by-side with other verb apps, see <a href="{{ '/best-french-conjugation-apps/' | relative_url }}">the best French conjugation apps compared</a>.</p>
       </details>
       <details>
         <summary>What's included in the free trial?</summary>

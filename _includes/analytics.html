@@ -74,7 +74,9 @@
   document.addEventListener('click', function (event) {
     var target = event.target;
     if (!target || typeof target.closest !== 'function') return;
-    var link = target.closest('a[href*="apps.apple.com"]');
+    // Matched on our own app id, not on apps.apple.com: the comparison page
+    // links to other apps' listings, and those are not our conversion.
+    var link = target.closest('a[href*="id{{ site.app_store_id }}"]');
     if (!link) return;
 
     var params = {
